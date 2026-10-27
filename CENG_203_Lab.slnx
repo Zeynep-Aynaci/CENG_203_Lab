@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CENG_203/CENG_203.vcxproj" />
+  <Project Path="CENG_203/CENG_203.vcxproj" Id="d398fb63-ca08-41e7-a084-54e5e986e008" />
 </Solution>
