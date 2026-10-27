@@ -55,7 +55,7 @@ int nonTailSum(int n)
 	if (n <= 0) {
 		return 0;
 	}
-	return n + nonTailsum(n - 1);
+	return n + nonTailSum(n - 1);
 
 }
 // ============================ Q5 ============================
@@ -90,7 +90,7 @@ double fastPower(double base, int exponent, int& calls)
 {
 	calls++;
 	if (exponent == 0) return 1;
-	if (exponent < 0) return 1 / fastPower(base, -exponent, calss);
+	if (exponent < 0) return 1 / fastPower(base, -exponent, calls);
 	double half = fastPower(base, exponent / 2, calls);
 	if (exponent % 2 == 0) {
 		return half * half;
