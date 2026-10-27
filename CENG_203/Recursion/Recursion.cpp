@@ -151,10 +151,20 @@ void parseOperand(const string& expr, int& index)
 // ============================ Q10 ============================
 long long fib(int n, long long& calls)
 {
-	calls++; // keep this line
-	return 0; // TODO: two recursive calls
+	calls++;                                              
+	if (n < 0) throw invalid_argument("fib: n must not be negative");
+	if (n <= 1) return n;                                 
+	return fib(n - 1, calls) + fib(n - 2, calls);
 }
 long long fibIter(int n)
 {
-	return 0; // TODO: a loop, no recursion
+	if (n <= 1) return n;            // fib(0)=0, fib(1)=1
+
+	long long a = 0, b = 1;          // a = fib(i-2), b = fib(i-1)
+	for (int i = 2; i <= n; i++) {
+		long long next = a + b;      // fib(i)
+		a = b;                       // pencereyi bir kaydır
+		b = next;
+	}
+	return b;                        // fib(n)
 }
