@@ -8,8 +8,8 @@ int main()                          // the ONLY main() of the project
     do {
         cout << "\n===== CENG203 Data Structures Lab =====" << endl;
         cout << " 2. Week 2 - Project structure test" << endl;
-        cout << " 3. Week 3 - Linked List" << endl;       // kendi başlığına göre yaz
-        cout << " 4. Week 4 - Stack" << endl;              // kendi başlığına göre yaz
+        cout << " 3. Week 3 - Linked List" << endl;      
+        cout << " 4. Week 4 - Stack" << endl;           
         cout << " 5. Week 5 - Recursion" << endl;
         cout << " 0. Exit" << endl;
         cout << "Your choice: ";
